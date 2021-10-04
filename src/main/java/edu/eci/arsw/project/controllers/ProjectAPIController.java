@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/project")
 public class ProjectAPIController {
 
-	// @RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<?> defaultGet(){
 		try {
 			return new ResponseEntity<>("ARSW - PROJECT:\n¡Responde o Lárgate!", HttpStatus.ACCEPTED);
