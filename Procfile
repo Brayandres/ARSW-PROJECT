@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/ARSW-PROJECT-0.0.1-SNAPSHOT.jar
+web: java $JAVA_OPTS -war target/project-0.0.1-SNAPSHOT.war --port $PORT target/*.war
